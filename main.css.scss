@@ -1,0 +1,52 @@
+/*用SCSS编译前的CSS源文件*/
+
+@use postcss-nested;
+@use autoprefixer;
+@use postcss-simple-vars;
+
+$backgroundColorSet : white;
+$buttonFontSize: 18px;
+
+body{
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 23px;
+}
+
+p, h1, button{
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+#textbox{
+  background: $backgroundColorSet;
+  width: 450px;
+  margin: 8% auto auto auto;
+  padding: 40px 50px 40px 50px;
+  display: table;
+  #author{
+    font-size: 18px;
+  }
+}
+
+button{
+  background: $backgroundColorSet;
+  font-size: $buttonFontSize;
+  &#newQuote{
+    float: right;
+    color: $backgroundColorSet;
+  }
+  &#sinaButton{
+    float:left;
+    color: $backgroundColorSet;
+  }
+}
+
+div #footer{
+  margin: 30px auto auto auto;
+  font-size: 10px;
+  color: white;
+  width: 100px;
+}
+
+#href{
+  color:white;
+}

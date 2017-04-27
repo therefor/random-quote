@@ -1,0 +1,16 @@
+//用Pug编译前的html body部分
+div.container
+    div.text-center
+        div#textbox.img-rounded
+            div.text-left
+                p#quote
+            div.text-right
+                p#author
+            div#sendButton
+                button#sinaButton.btn.btn-default(title = "分享到微博")
+                    i.fa.fa-weibo(aria-hidden="true")
+                button#newQuote.btn.btn-default(title = "get a new quote") New Quote
+    div#footer.text-center by
+        a#href(target = "_blank" href = "http://codepen.io/StephenZhong/") Stephen Zhong
+
+
